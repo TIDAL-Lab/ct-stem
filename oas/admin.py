@@ -2,7 +2,7 @@ import csv, codecs, cStringIO
 from django.contrib import admin
 # from django.core import serializers
 from django.http import HttpResponse
-from oas.models import Teacher, Section, Student, AssessEvent, Response
+from oas.models import Teacher, Section, Student, AssessEvent, Response, Items
 
 
 class TeacherAdmin(admin.ModelAdmin):
@@ -116,6 +116,11 @@ class AssessEventAdmin(admin.ModelAdmin):
 class ResponseAdmin(admin.ModelAdmin):
 	list_display = ('assess_event', 'item_name', 'response')
 	list_filter = ('item_name',)
+	
+	
+class ItemAdmin(admin.ModelAdmin):
+	list_display = ('assessment_set', 'item_name', 'question_text', 'question_type', 'answer')
+	list_filter = ('item_name',)
 
 
 admin.site.register(Teacher, TeacherAdmin)
@@ -123,6 +128,8 @@ admin.site.register(Section, SectionAdmin)
 admin.site.register(Student, StudentAdmin)
 admin.site.register(AssessEvent, AssessEventAdmin)
 admin.site.register(Response, ResponseAdmin)
+admin.site.register(Items, ItemAdmin)
+
 
 class UnicodeWriter:
     """

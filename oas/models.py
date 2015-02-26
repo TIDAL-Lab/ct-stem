@@ -63,7 +63,7 @@ class Response(models.Model):
 #new table 
 class Items(models.Model):
 	assessment_set = models.CharField(max_length=30) # "Purple Bugs", "HDI", "Warblers", "CPS1", etc.
-	item_name = models.CharField(max_length=2) # 1, 2b, 3a, etc.
+	item_name = models.CharField(max_length=3) # 1, 2b, 3a, etc.
 	question_text = models.CharField(max_length=400) #arbitrarily set the length to 400, actual question, ie "what happens..
 	question_type = models.CharField(max_length=15) #MC_Radio, MC_checkbox, number, short answer, etc.
 	answer = models.CharField(max_length=400) #actual answer
