@@ -54,6 +54,22 @@ class Response(models.Model):
 	item_name	= models.CharField(max_length=10) 						#"PB1a", "Warb1"  
 	response = models.CharField(max_length=400)
  	submitted_at = models.DateTimeField()
+ 	score = models.IntegerField() #Kevin change, score field holds integer score of each question
+ 	
 
  	def __unicode__(self):
  		return self.assess_event.student.last_name + ': ' +self.item_name + ' : ' + self.response
+
+#new table 
+class Items(models.Model):
+	assessment_set = models.CharField(max_length=30) # "Purple Bugs", "HDI", "Warblers", "CPS1", etc.
+	item_name = models.CharField(max_length=3) # 1, 2b, 3a, etc.
+	question_text = models.CharField(max_length=400) #arbitrarily set the length to 400, actual question, ie "what happens..
+	question_type = models.CharField(max_length=15) #MC_Radio, MC_checkbox, number, short answer, etc.
+	answer = models.CharField(max_length=400) #actual answer
+	#max_points = models.IntegerField() #potentially used in the future
+	#skills = models.CharField() #potentially for coding questions
+	
+	def __unicode__(self):
+		return self.assessment_set + ' ' + self.item_name +  ' ' + self.question_text + '\n Answer: ' + self.answer 
+		
