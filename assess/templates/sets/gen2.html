@@ -54,11 +54,11 @@ refreshIFrames(getCurrentPageNum() - 1);
 
          <center><h3>Exploring the Ideal Gas Law</h3></center>
          <div class="stimulus">
-         These questions use a computer model that simulates air 
+         These questions use a computer simulation of air 
          molecules in a closed container. To run the simulation, press 
          the <b>Go/Stop</b> button.
          <br/><br/>
-         The purple dots represent individual air molecules moving inside the container. You can change the number of molecules and the size of the container using the sliders in the model. After changing a slider value, click the neighboring Update button to apply the change to the model. The graph shows the air pressure in the box over time. Click the Highlight button to follow a single molecule.
+         The purple dots represent individual air molecules moving inside the container. You can change the number of molecules and the size of the container using the sliders. After changing a slider value, click the Update button to make the change. The graph shows the air pressure in the box over time. Click the Highlight button to follow a single molecule at a time.
 
          <iframe id="uni1-frame1" src="" class="gen2-tortoise-frame"></iframe>
 
@@ -71,10 +71,7 @@ refreshIFrames(getCurrentPageNum() - 1);
       <br />
       <div class="prompt">
          <b>Item 1:</b> Set the number of air molecules to 100 and the 
-         wall-position to 30 and run the model. Let it run for at least 
-         40 ticks (you can speed up the model using the slider at the top
-         of the model). Choose the best statement about what happens to 
-         the air pressure over time:
+         wall-position to 30. Run the simulation for at least 40 ticks (you can speed up the model using the slider at the top). Choose the best statement about what happens to the air pressure over time:
       </div>
       <ol class="check-one" input-num="uni2_1">
          <li answer="A">The pressure keeps increasing over the time.</li>
@@ -85,7 +82,7 @@ refreshIFrames(getCurrentPageNum() - 1);
       <input id="uni2_1" type="text" dir="auto" value="" name="uni2_1" style="display:none;">
 
       <div class="prompt">
-         <b>Item 2:</b> Watch a single air molecule (purple dot). This is easier if you slow down the model using the slider at the top of the model.
+         <b>Item 2:</b> Watch a single air molecule (purple dot). This is easier if you slow down the simulation using the slider at the top.
          <br/>
       </div>
       <div  style="padding-left:33px;">
@@ -94,15 +91,13 @@ refreshIFrames(getCurrentPageNum() - 1);
          </div>
          <textarea id="uni2_2a" name="uni2_2a" style="width:597px;"></textarea>
          <div class="prompt">
-            <b>B:</b> Do all molecules exhibit the same behavior when they hit a wall? How can you tell?
+            <b>B:</b> Do all molecules do the same thing when they hit a wall? How can you tell?
          </div>
          <textarea id="uni2_2b" name="uni2_2b" style="width:597px;"></textarea>
       </div>
       <br/>
       <div class="prompt">
-         <b>Item 3:</b> Try changing the number of particles in the model and the size of the container. 
-         Which of these statements best describes the relationship between these two inputs and the pressure 
-         in the model?
+         <b>Item 3:</b> Try changing the number of particles in the simulation and the size of the container. Which of these statements best describes the relationship between these two inputs and the pressure in the container?
       </div>
       <ol class="check-one" input-num="uni2_3">
          <li answer="A">Only the number of particles affects the pressure in the container</li>
@@ -118,7 +113,7 @@ refreshIFrames(getCurrentPageNum() - 1);
       
 	<br />
 	<div class="prompt">
-		<b>Item 4a:</b> What allowed values for container size and 
+		<b>Item 4a:</b> What values for container size and 
 		number of particles will result in the lowest pressure in the container?
 	</div>
 	<div style="padding-left:33px;">
@@ -133,7 +128,7 @@ refreshIFrames(getCurrentPageNum() - 1);
 	  
     <br/>
     <div class="prompt">
-       <b>Item 5:</b> All computational models are only approximations of reality. What are some of the simplifications this model makes that make it different from reality?
+       <b>Item 5:</b> All computational simulations are only approximations of reality. What are some of the simplifications of this simulation makes that make it different from the real world?
     </div>
     <textarea id="uni2_5" name="uni2_5"></textarea>
    </div>
@@ -144,9 +139,7 @@ refreshIFrames(getCurrentPageNum() - 1);
       <center><h3>Temperature in Bacteria Growth Experiment</h3></center>
       A biologist wants to understand the growth of bacteria in four 
       different temperature conditions. She uses four different sensors 
-      to measure a chemical byproduct produced by the bacteria cultures. 
-      She wrote this computer program to record temperature readings 
-      from the sensors: 
+      to measure a chemical toxin produced by the bacteria cultures.  
       <br/>
       <center><img src="/static/images/gen2/bacteria_exp.jpg" style="height:146px;"></center>
       She wrote this computer program to record temperature readings from the sensors:
@@ -180,10 +173,10 @@ repeat forever:
       </div>
       <ol class="check-one" input-num="uni2_7">
          <!-- yes the margin-left:0px needs to be there - otherwise the select buttons don't show -->
-            <li answer="A"><img src="/static/images/uni1/heat_exp_graph1.jpg" style="margin-left:0px;width:343px;padding:.05in"></li>
-            <li answer="B"><img src="/static/images/uni1/heat_exp_graph2.jpg" style="margin-left:0px;width:343px;padding:.05in"></li>
-            <li answer="C"><img src="/static/images/uni1/heat_exp_graph3.jpg" style="margin-left:0px;width:343px;padding:.05in"></li>
-            <li answer="D"><img src="/static/images/uni1/heat_exp_graph4.jpg" style="margin-left:0px;width:343px;padding:.05in"></li>
+            <li answer="A"><img src="/static/images/gen2/toxin_exp_graph1.jpg" style="margin-left:0px;width:343px;padding:.05in"></li>
+            <li answer="B"><img src="/static/images/gen2/toxin_exp_graph2.jpg" style="margin-left:0px;width:343px;padding:.05in"></li>
+            <li answer="C"><img src="/static/images/gen2/toxin_exp_graph3.jpg" style="margin-left:0px;width:343px;padding:.05in"></li>
+            <li answer="D"><img src="/static/images/gen2/toxin_exp_graph4.jpg" style="margin-left:0px;width:343px;padding:.05in"></li>
       </ol>
       <input id="uni2_7" type="text" dir="auto" value="" name="uni2_7" style="display:none;">
    </div>
@@ -192,7 +185,7 @@ repeat forever:
          <br/>
          <b>Item 8:</b> When the scientist ran her trial with four sensors, she noticed something strange with the third sensor. This graph shows the readings for sensors 2 and 3.
          <br/>
-         <center><img src="/static/images/uni1/heat_exp_err.jpg" style="height:333px;"></center>
+         <center><img src="/static/images/gen2/toxin_exp_err.jpg" style="height:333px;"></center>
          Which explanation is most likely?
          <ol class="check-one" input-num="uni2_8">
          <!-- yes the margin-left:0px needs to be there - otherwise the select buttons don't show -->
@@ -214,10 +207,10 @@ repeat forever:
       </div>
       <ol class="check-one" input-num="uni2_9a">
          <!-- yes the margin-left:0px needs to be there - otherwise the select buttons don't show -->
-            <li answer="A">Run one trial and move the sensors along the bar as they reach an equilibrium temperature.</li>
+            <li answer="A">Run one trial with 8 cultures at the 8 temperatures and move the sensors between different cultures at regular intervals.</li>
             <li answer="B">It can't be done without getting more sensors.</li>
-            <li answer="C">Run several trials and move the sensors to different locations between the trials.</li>
-            <li answer="D">Spread the sensors out evenly along the entire length of the bar and assume that the temperature between sensors will change steadily and predictably.</li>
+            <li answer="C">Run several trials, systematically testing only some ofthe temperature conditions in each trial.</li>
+            <li answer="D">Setup 4 cultures at different temperatures, run the experiement, then create a math equation to figure out how the cutures change based on temperature. The equation can then tell you what the growth of bacteria should be for all 8 cultures.</li>
       </ol>
       <input id="uni2_9a" type="text" dir="auto" value="" name="uni2_9a" style="display:none;">
       <div class="prompt">

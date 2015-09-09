@@ -15,5 +15,9 @@ General 1
 	v1.0 - Original Text
 	v1.1 - 7.2.15 #Updating question text based on revisions
 
+General 2
+	v1.0 - Original Text
+	v1.1 - 9.9.15 $Revision of text, mostly replacing 'model' with 'simulation' and cleaning up/simplifying language
+
 Warblers
 	v1.0 - 12.17.13
