@@ -53,7 +53,7 @@ class AssessEvent(models.Model):
 class Response(models.Model):
 	assess_event = models.ForeignKey(AssessEvent)
 	item_name	= models.CharField(max_length=10) 						#"PB1a", "Warb1"  
-	response = models.CharField(max_length=400)
+	response = models.CharField(max_length=1000)
  	submitted_at = models.DateTimeField()
 
  	def __unicode__(self):
