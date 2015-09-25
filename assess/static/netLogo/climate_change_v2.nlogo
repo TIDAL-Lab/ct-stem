@@ -275,13 +275,13 @@ end
 ; See Info tab for full copyright and license.
 @#$#@#$#@
 GRAPHICS-WINDOW
-293
 10
-842
-382
+161
+558
+532
 24
 -1
-11.0
+10.98
 1
 10
 1
@@ -302,10 +302,10 @@ ticks
 30.0
 
 BUTTON
-6
-12
-101
-45
+10
+15
+70
+60
 Setup
 Setup
 NIL
@@ -319,10 +319,10 @@ NIL
 1
 
 BUTTON
-103
-12
-203
-45
+80
+15
+175
+60
 Go / Stop
 go
 T
@@ -336,10 +336,10 @@ NIL
 1
 
 PLOT
-9
-146
-284
-383
+290
+10
+560
+185
 Global Temperature
 time
 temperature
@@ -354,10 +354,10 @@ PENS
 "default" 1.0 0 -2674135 true "" ""
 
 MONITOR
-189
-89
-282
-134
+180
+15
+273
+60
 NIL
 temperature
 1
@@ -365,10 +365,10 @@ temperature
 11
 
 SLIDER
-7
-54
-179
-87
+10
+70
+275
+103
 cloud-coverage
 cloud-coverage
 0
@@ -380,10 +380,10 @@ cloud-coverage
 HORIZONTAL
 
 SLIDER
-8
-100
-180
-133
+10
+115
+275
+148
 CO2-amount
 CO2-amount
 0
@@ -818,5 +818,5 @@ Line -7500403 true 150 150 90 180
 Line -7500403 true 150 150 210 180
 
 @#$#@#$#@
-0
+1
 @#$#@#$#@

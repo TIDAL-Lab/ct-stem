@@ -5,12 +5,10 @@
 {% block css %}
  <style type="text/css">
    .uni1-tortoise-frame {
-      height:593px;
-      width:681px;
-      padding: 8px;
+      height:629px;
+      width:615px;
       border: 1px solid rgba(0, 0, 0, 0.5);
       box-shadow: 3px 3px 10px #555;
-      margin-left:-38px;
       margin-top:10px;
    }
   </style>
@@ -53,18 +51,8 @@ refreshIFrames(getCurrentPageNum() - 1);
 
          <center><h3>Exploring Climate Change</h3></center>
          <div class="stimulus">
-         These questions use a computer model that simulates the effect of cloud cover and carbon dioxide (CO<sub>2</sub>) on the temperature of earth. To run the simulation, click on the <b>Setup</b> button and then click on the <b>Go</b> button to start the model. CO<sub>2</sub> is shown as green and white molecules in the atmosphere. To run the simulation again, press the Setup button. A graph above the simulation shows the global temperature over the time. You can change the speed of the model with the slider at the top of the model.
+         These questions use a computer model that simulates the effect of cloud cover and carbon dioxide (CO<sub>2</sub>) on the temperature of earth. To run the simulation, click on the <b>Setup</b> button and then click on the <b>Go / Stop</b> button to start the model. CO<sub>2</sub> is shown as green and white molecules in the atmosphere. To run the simulation again, press the Setup button. A graph above the simulation shows the global temperature over the time. You can change the speed of the model with the slider at the top of the model.
          <iframe id="uni1-frame1" src="" class="uni1-tortoise-frame"></iframe>
-         <span onclick="$( '#webstart-instructions1' ).toggle( 'blind', function(){updateFooterPosition();});" style="cursor:pointer;float:right;font-size:12px;margin-top:-12px;text-decoration:underline;">If you do not see the model above, please click here.</span><br/>
-         <div id="webstart-instructions1" style="display:none;padding-left:20px;line-height:135%;font-size:14px;">
-         You can download and run a version of the model by following these steps:
-         <pre style="font-size:11pt;line-height:100%;margin-right:-11px;">
-1. Click <a href="/static/netLogo/climate_change.jnlp" onclick="$('#opened_WS').val('true');return true;" target="_blank">here</a> to download the model.<br/>
-2. Click OK to begin the download.  It may take a minute or two.<br/>
-3. You will be asked for permission to run the model, click 'allow'.<br/>
-4. You should see a NetLogo icon, then the model will open.<br/>
-5. Use this model to answer questions 1 - 5 of this assessment.</pre>
-         </div>
          Try running the model a few times now. There are two sliders that adjust the cloud coverage and carbon dioxide (CO<sub>2</sub>) in the atmosphere. 
          <br/><br/>
          In the model, the yellow lines represent sunlight. Some of the sunlight reflects off the earth’s surface while some of the sunlight is absorbed. The red dots represent heat energy that has been absorbed. Some of this heat energy is emitted back towards the atmosphere in the form of infrared (IR) light. The infrared light is show as red lines.
@@ -74,18 +62,8 @@ refreshIFrames(getCurrentPageNum() - 1);
    <div class="page">
       Using the climate change model to answer the questions below.
       <iframe id="uni1-frame2" src="" class="uni1-tortoise-frame"></iframe>
-      <span onclick="$( '#webstart-instructions2' ).toggle( 'blind', function(){updateFooterPosition();});" style="cursor:pointer;float:right;font-size:12px;margin-top:-12px;text-decoration:underline;">If you do not see the model above, please click here.</span><br/>
-      <div id="webstart-instructions2" style="display:none;padding-left:20px;line-height:135%;font-size:14px;">
-      You can download and run a version of the model by following these steps:
-      <pre style="font-size:11pt;line-height:100%;margin-right:-11px;">
-1. Click <a href="/static/netLogo/climate_change.jnlp" onclick="$('#opened_WS').val('true');return true;" target="_blank">here</a> to download the model.<br/>
-2. Click OK to begin the download.  It may take a minute or two.<br/>
-3. You will be asked for permission to run the model, click 'allow'.<br/>
-4. You should see a NetLogo icon, then the model will open.<br/>
-5. Use this model to answer questions 1 - 5 of this assessment.</pre>
-      </div>
       <div class="prompt">
-         <b>Item 1:</b> Set the cloud-coverage to 0% and CO<sub>2</sub>-amount to 0 and run the model. Let it run for at least 10,000 ticks. Choose the best statement about what happens to the temperature over time:
+         <b>Item 1:</b> Set the cloud-coverage to 0% and CO<sub>2</sub>-amount to 0 and run the model. Let it run for at least 6,000 ticks. Choose the best statement about what happens to the temperature over time:
       </div>
       <ol class="check-one" input-num="uni1_1">
          <li answer="A">The temperature keeps increasing over time.</li>
@@ -113,16 +91,6 @@ refreshIFrames(getCurrentPageNum() - 1);
 
    <div class="page">
       <iframe id="uni1-frame3" src="" class="uni1-tortoise-frame"></iframe>
-      <span onclick="$( '#webstart-instructions3' ).toggle( 'blind', function(){updateFooterPosition();});" style="cursor:pointer;float:right;font-size:12px;margin-top:-12px;text-decoration:underline;">If you do not see the model above, please click here.</span><br/>
-      <div id="webstart-instructions3" style="display:none;padding-left:20px;line-height:135%;font-size:14px;">
-      You can download and run a version of the model by following these steps:
-      <pre style="font-size:11pt;line-height:100%;margin-right:-11px;">
-1. Click <a href="/static/netLogo/climate_change.jnlp" onclick="$('#opened_WS').val('true');return true;" target="_blank">here</a> to download the model.<br/>
-2. Click OK to begin the download.  It may take a minute or two.<br/>
-3. You will be asked for permission to run the model, click 'allow'.<br/>
-4. You should see a NetLogo icon, then the model will open.<br/>
-5. Use this model to answer questions 1 - 5 of this assessment.</pre>
-      </div>
 
       <div class="prompt">
          <b>Item 3:</b> Set the cloud coverage to 50% and CO<sub>2</sub> amount to 50. Run the model long enough to see IR light (red lines) start to appear. Choose the best statement, based on what you see:
