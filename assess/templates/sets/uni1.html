@@ -5,7 +5,7 @@
 {% block css %}
  <style type="text/css">
    .uni1-tortoise-frame {
-      height:629px;
+      height:711px;
       width:615px;
       border: 1px solid rgba(0, 0, 0, 0.5);
       box-shadow: 3px 3px 10px #555;
@@ -21,7 +21,7 @@
       // clear all frames
       $('iframe').each (function (id, el) { $(el).attr('src', "");});
       // load desired frame
-      $('#uni1-frame' + loadFrame).attr('src', '/static/netLogo/climate_change.html');
+      $('#uni1-frame' + loadFrame).attr('src', '/static/netLogo/climate_change_v3.html');
    }
 
    $(function() {
@@ -51,7 +51,7 @@ refreshIFrames(getCurrentPageNum() - 1);
 
          <center><h3>Exploring Climate Change</h3></center>
          <div class="stimulus">
-         These questions use a computer model that simulates the effect of cloud cover and carbon dioxide (CO<sub>2</sub>) on the temperature of the Earth. To run the simulation, click on the <b>Setup</b> button and then click on the <b>Go / Stop</b> button to start the model. CO<sub>2</sub> is shown as green and white molecules in the atmosphere. To run the simulation again, press the Setup button. A graph above the simulation shows the global temperature over the time. You can change the speed of the model with the slider at the top of the model.
+         These questions use a computer model that simulates the effect of cloud cover and carbon dioxide (CO<sub>2</sub>) on the temperature of the Earth. To run the simulation, click on the <b>Setup</b> button and then click on the <b>Go / Stop</b> button to start the model. CO<sub>2</sub> is shown as green and white molecules in the atmosphere. To run the simulation again, press the Setup button. The graph below the simulation shows the global temperature over the time. You can change the speed of the model with the slider at the very top of the model.
          <iframe id="uni1-frame1" src="" class="uni1-tortoise-frame"></iframe>
          Try running the model a few times now. There are two sliders that adjust the cloud coverage and carbon dioxide (CO<sub>2</sub>) in the atmosphere. 
          <br/><br/>
@@ -68,7 +68,7 @@ refreshIFrames(getCurrentPageNum() - 1);
       <ol class="check-one" input-num="uni1_1">
          <li answer="A">The temperature keeps increasing over time.</li>
          <li answer="B">The temperature repeatedly rises and falls  forever.</li>
-         <li answer="C">The temperature increases first and then begins to rise and fall by a small amount forever.</li>
+         <li answer="C">The temperature rises and then stays more or less the same with some small fluctuations.</li>
          <li answer="D">The temperature increases, reaches a peak, then decreases back to zero.</li>
       </ol>
       <input id="uni1_1" type="text" dir="auto" value="" name="uni1_1" style="display:none;">
