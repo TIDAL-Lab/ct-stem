@@ -69184,6 +69184,8 @@ Line -7500403 true 150 150 210 180
         Tortoise.fromNlogo(e.data.nlogo, modelContainer, e.data.path, openSession, displayError);
       });
 
+      window.addEventListener('load', procedures.setup);
+
       if (parent !== window) {
         var width = "", height = "";
         window.setInterval(function() {
